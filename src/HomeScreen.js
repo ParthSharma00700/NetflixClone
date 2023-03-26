@@ -1,6 +1,6 @@
 import React from 'react'
 import Banner from './Banner';
-import "./HomeScreen.css";
+import './HomeScreen.css';
 import Nav from './Nav';
 import Row from './Row';
 import requests from './Requests';
@@ -12,7 +12,7 @@ function HomeScreen() {
     <div className='homeScreen'>
       <Nav />
 
-      <Banner></Banner>
+      <Banner/>
       <Row
         title="NETFLIX ORIGINALS"
         fetchUrl={requests.fetchNetflixOriginals}
