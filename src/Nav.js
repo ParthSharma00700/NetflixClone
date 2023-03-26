@@ -18,18 +18,16 @@ function Nav() {
   }, []);
 
   return (
-    <div className={`nav &{show && 'nav_black'}  `}>
-      <div className='nav_contents'>
-    
-      <img
-      className='nav_logo'
-      src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png'alt=''/>
+    <div className={`nav ${show && 'nav__black'}`}>
+      <div className='nav__contents'>
+        <img
+        className='nav__logo'
+        src='https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png' alt=''/>
 
-      <img 
-      className='nav_avatar'
-      src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png'alt=''/>
-      
-    </div>
+        <img 
+        className='nav__avatar'
+        src='https://mir-s3-cdn-cf.behance.net/project_modules/disp/1bdc9a33850498.56ba69ac2ba5b.png' alt=''/>
+      </div>
     </div>
   );
 }
