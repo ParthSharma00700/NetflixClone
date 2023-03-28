@@ -21,7 +21,7 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
 
       <h2>{title}</h2>
 
-      <div className="row_posters">
+      <div className="row__posters">
 
         {movies.map(
           (movie) =>
