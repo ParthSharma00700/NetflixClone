@@ -1,6 +1,7 @@
 import React from 'react'
 import {useState} from 'react';
 import './LoginScreen.css'
+import SignupScreen from './SignupScreen'
 function LoginScreen() {
   const[signIn, setSignIn] = useState(false)
   return (
@@ -19,7 +20,7 @@ function LoginScreen() {
         </div>
         <div className="loginScreen__body">
           {signIn? (
-            <SignInScreen/>
+            <SignupScreen/>
           ):
           (
             <>

@@ -58,7 +58,9 @@
     text-align:center;
     z-index: 1;
     color:#fff;
-    padding:20px
+    padding:20px;
+    left:0;
+    right:0;
 }
 .loginScreen__input > form > input {
    padding: 10px;
