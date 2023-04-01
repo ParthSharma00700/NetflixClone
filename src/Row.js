@@ -4,9 +4,9 @@ import "./Row.css";
 
 const base_url = "https://image.tmdb.org/t/p/original/";
 
-function Row({ title, fetchUrl, isLargeRow }) {
+function Row({ title, fetchUrl, isLargeRow = false }) {
   const [movies, setMovies] = useState([]);
-
+  const base_url = "https://image.tmdb.org/t/p/original/"
   useEffect(() => {
     async function fetchData() {
       const request = await axios.get(fetchUrl);
@@ -15,13 +15,13 @@ function Row({ title, fetchUrl, isLargeRow }) {
     }
     fetchData();
   }, [fetchUrl]);
-
+  // console.log(movies)
   return (
     <div className="row">
 
       <h2>{title}</h2>
 
-      <div className="row_posters">
+      <div className="row__posters">
 
         {movies.map(
           (movie) =>
